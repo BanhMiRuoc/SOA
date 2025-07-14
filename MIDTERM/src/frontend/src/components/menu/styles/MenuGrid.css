@@ -1,0 +1,74 @@
+/* src/components/menu/styles/MenuGrid.css */
+.menu-container {
+  max-width: 100%;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.menu-header h1 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: var(--secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.search-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-item-wrapper {
+  flex: 1;
+  min-width: 0; /* Helps with flexbox sizing */
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .menu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .search-container {
+    width: 100%;
+  }
+  
+  .menu-row {
+    flex-direction: column;
+  }
+}

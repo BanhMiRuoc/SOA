@@ -1,0 +1,27 @@
+/* src/components/menu/styles/MenuCategory.css */
+.menu-categories {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.menu-categories button {
+  background-color: var(--secondary);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.menu-categories button:hover {
+  background-color: #303030;
+}
+
+.menu-categories button.active {
+  background-color: var(--accent);
+  color: var(--primary);
+}

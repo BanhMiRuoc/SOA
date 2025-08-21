@@ -1,0 +1,1 @@
+Nếu cấu hình đúng đường dẫn database để backend kết nối, khi chạy ứng dụng project sẽ tự động tạo bảng và tự thêm dữ liệu nếu chưa có (bằng file DataLoader.java được inject trong project)
